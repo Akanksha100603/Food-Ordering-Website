@@ -1,0 +1,173 @@
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: gold;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav a {
+        color: gold;
+        text-decoration: none;
+        font-weight: bold;
+    
+    }
+
+    nav a:hover{
+        font-size: large;
+    }
+
+
+    .main{
+
+        background: url('photo.jpg');
+        
+        /* background-position-x: center;
+        background-position-y: center; */
+        background-size: cover;
+        
+
+    }
+
+
+
+    .hero {
+
+        text-align: center;
+        padding: 30px 20px;
+       
+     }
+
+    .hero h1{
+        font-size: 65px;
+        font-weight: bolder;
+    }
+   
+     .hero p{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+
+
+
+
+
+    .btn {
+        background: gold;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .menu {
+        text-align: center;
+        padding: 50px;
+    }
+    .menu-items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .item {
+        background: gold;
+        color: black;
+        padding: 15px;
+        border-radius: 5px;
+        border-radius: 20px;
+    }
+
+    .reservation{
+         text-align: center;
+        padding: 30px;
+    }
+
+    .contact {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .order-btn {
+    margin-top: 10px;
+    background: #fff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.order-btn:hover {
+    background: gold;
+}
+
+
+/* Forms Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+input, textarea, button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+input, textarea {
+    background: #fff;
+    color: #000;
+}
+
+button {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f5c518;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}

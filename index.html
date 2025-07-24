@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crave & Caviar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">Crave & Caviar</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="home" class="hero">
+      <h1>Welcome to Crave & Caviar</h1>
+      <p>Exquisite dining with a touch of elegance</p>
+      <a href="#reservation" class="btn">Reserve a Table</a>
+    </section>
+
+    <section id="menu" class="menu">
+  <h2>Our Menu</h2>
+
+  <h3>⭐ Starters</h3>
+  <div class="menu-items">
+    <div class="item">
+      Tomato Basil Soup
+      <button class="order-btn" data-item="Tomato Basil Soup">Order Now</button>
+    </div>
+    <div class="item">
+      Garlic Bread
+      <button class="order-btn" data-item="Garlic Bread">Order Now</button>
+    </div>
+    <div class="item">
+      Truffle Fries
+      <button class="order-btn" data-item="Truffle Fries">Order Now</button>
+    </div>
+  </div>
+
+  <h3>🍽️ Mains</h3>
+  <div class="menu-items">
+    <div class="item">
+      Caviar Delight
+      <button class="order-btn" data-item="Caviar Delight">Order Now</button>
+    </div>
+    <div class="item">
+      Truffle Pasta
+      <button class="order-btn" data-item="Truffle Pasta">Order Now</button>
+    </div>
+    <div class="item">
+      Gourmet Steak
+      <button class="order-btn" data-item="Gourmet Steak">Order Now</button>
+    </div>
+  </div>
+
+  <h3>☕ Coffee & Beverages</h3>
+  <div class="menu-items">
+    <div class="item">
+      Cappuccino
+      <button class="order-btn" data-item="Cappuccino">Order Now</button>
+    </div>
+    <div class="item">
+      Iced Americano
+      <button class="order-btn" data-item="Iced Americano">Order Now</button>
+    </div>
+    <div class="item">
+      Mocha Latte
+      <button class="order-btn" data-item="Mocha Latte">Order Now</button>
+    </div>
+  </div>
+</section>
+
+
+    <section id="reservation" class="reservation">
+      <h2>Reserve a Table</h2>
+      <form id="reservation-form" action="https://formspree.io/f/xanberrg" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+        <input type="number" name="guests" placeholder="No. of Guests" required />
+        <button type="submit">Book Table</button>
+      </form>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="https://formspree.io/f/xanberrg" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message / Order Details" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
